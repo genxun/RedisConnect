@@ -30,7 +30,7 @@ int main(int argc, char** argv)
 	shared_ptr<RedisConnect> redis = RedisConnect::Instance();
  
 	//选择0-15中的数据库
-	select(11);
+	selectIndex(11);
 
 	//设置一个键值
 	redis->set("key", "val");
